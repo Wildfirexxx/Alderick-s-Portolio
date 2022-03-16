@@ -69,6 +69,18 @@ header a {
     border: solid 7px aquamarine;
 }
 
+.large-hold{
+    width: 50vw;
+
+}
+
+.small-hold{
+    width: 22vw;
+    margin: 14px;
+
+}
+
+
 h2 {
     font-size: 3rem;
     position: relative;
@@ -86,12 +98,12 @@ section {
     left: 25vw;
     border-left: solid 5px black;
     padding-left: 15vw;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.small-hold {
-    margin: 15px;
-}
+
 
 
 .contact-info ul {
