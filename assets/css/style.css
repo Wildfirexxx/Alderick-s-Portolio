@@ -7,6 +7,7 @@ header {
     background-color: #212323;
     width: 100%;
     height: auto;
+   
 }
 
 header h1 {
@@ -30,6 +31,7 @@ header ul {
     font-size: 4vh;
     position: relative;
     bottom: 5vh;
+    
 }
 
 header li {
@@ -47,6 +49,7 @@ header li {
 header a {
     text-decoration: none;
     color: aquamarine;
+    
 }
 .self-pic {
     width: 8.5%;
@@ -56,6 +59,10 @@ header a {
 /* header end */
 
 /* main start */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 .content {
     line-height: 4vh;
     font-size: 2em;
@@ -76,7 +83,12 @@ header a {
 
 .small-hold{
     width: 22vw;
-    margin: 14px;
+    margin-right: 20px;
+
+}
+.image-wrapper-sm{
+margin: auto;
+
 
 }
 
@@ -97,7 +109,7 @@ section {
     position: relative;
     left: 25vw;
     border-left: solid 5px black;
-    padding-left: 15vw;
+    padding-left: 15vw; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,7 +152,7 @@ h3 {
 /* footer end */
 
 /* media queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
     header {
         width: 100%;
     }
@@ -149,9 +161,13 @@ h3 {
         width: 24%;
     }
 
-    h2,
-    h3 {
+    h2{
         font-size: 1rem;
+        position: relative;
+        left: 1rem;
+    }
+    h3{
+        left: 25px;
     }
 
     .large-hold {
@@ -159,7 +175,7 @@ h3 {
     }
 
     .small-hold {
-        width: 45%;
+        width: 55%;
     }
 
     .content {
@@ -174,8 +190,8 @@ h3 {
         font-size: 1.8rem;
     }
 
-    nav a {
-        font-size: 1.5rem;
+    header nav ul li a {
+        font-size: 1rem;
     }
 
     footer a {
@@ -200,10 +216,16 @@ h3 {
     h2,
     h3 {
         font-size: 1.5rem;
+        position: relative;
+       
+    }
+    h3{
+        position: relative;
+        left: 1.5rem;
     }
 
     .large-hold {
-        width: 75%;
+        width: 100%;
     }
 
     .small-hold {
@@ -231,7 +253,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     header {
         width: 100%;
     }
@@ -250,11 +272,14 @@ h3 {
     }
 
     .large-hold {
-        width: 75%;
+        width: 88%;
     }
 
     .small-hold {
-        width: 25%;
+        width: 40%;
+        display: inline-block;
+        flex-wrap: wrap;
+        
     }
 
     .content {
